@@ -36,7 +36,7 @@
                             <th scope="col">Train Name</th>
                             <th scope="col">Destination</th>
                             <th scope="col">Frequency (min)</th>
-                            <th scope="col">Next Arrival (Military time)</th>
+                            <th scope="col">Next Arrival</th>
                             <th scope="col">Minutes Away</th>
                         </tr>
                     </thead>
@@ -56,19 +56,19 @@
                     <form>
                         <div class="form-group">
                             <label for="name-input">Train Name</label>
-                            <input class="form-control" id="name-input" type="text">
+                            <input class="form-control" id="name-input" type="text" required>
                         </div>
                         <div class="form-group">
                             <label for="destination-input">Destination</label>
-                            <input class="form-control" id="destination-input" type="text">
+                            <input class="form-control" id="destination-input" type="text" required>
                         </div>
                         <div class="form-group">
-                            <label for="time-input">First Train Time</label>
-                            <input class="form-control" id="time-input" type="time">
+                            <label for="time-input">First Train Time (HH:mm - Military time)</label>
+                            <input class="form-control" id="time-input" type="text" required>
                         </div>
                         <div class="form-group">
                             <label for="rate-input">Frequency (minutes)</label>
-                            <input class="form-control" id="rate-input" type="number">
+                            <input class="form-control" id="rate-input" type="number" required>
                         </div>
                         <button class="btn btn-primary float-right" id="add-train-btn">Create Schedule!</button>
                     </form>
